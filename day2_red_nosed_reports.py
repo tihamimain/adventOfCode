@@ -20,11 +20,14 @@ def evaluate_report(report):
         # print("This report is UNSAFE.")
         return "UNSAFE"
 
+
+
 # Main execution
 filename = "input_day2.txt"
 with open(filename, "r") as file:
     data = [line.strip().split() for line in file.readlines()]
 safe_count = 0
+
 
 for report in data:
     evaluate_report(report)
